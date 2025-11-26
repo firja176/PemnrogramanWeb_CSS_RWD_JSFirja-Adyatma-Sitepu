@@ -1,0 +1,119 @@
+/* WARNA TEMA HIJAU (laki-laki NIM genap) */
+:root{
+  --hijau-muda: #e9f8ee;
+  --hijau-tua: #146914;
+  --kontras-bad: #fffb00;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: var(--hijau-muda);
+  color: var(--hijau-tua);
+  line-height:1.5;
+}
+
+/* HEADER */
+.header{ padding:12px; background:#dff5dd; border-bottom:1px solid #bfe6c1; }
+.identitas{ text-align:center; font-weight:600; }
+
+/* CONTAINER */
+.container{ max-width:1000px; margin:18px auto; padding:0 16px; }
+
+/* TYPO */
+h2{ margin-top:0; }
+.petunjuk{ font-weight:400; color:#444; font-size:0.95rem; }
+
+/* Penjelasan */
+.penjelasan{ display:block; margin:8px 0 18px 0; }
+
+/* Judul-topik */
+h4{
+  margin:10px 0 6px;
+  padding:8px;
+  background:#f3fff3;
+  border-radius:4px;
+  cursor:pointer;
+  transition: transform .2s ease;
+}
+
+/* Tombol */
+button{
+  padding:8px 12px;
+  border-radius:6px;
+  border:1px solid var(--hijau-tua);
+  background: var(--hijau-tua);
+  color:white;
+  cursor:pointer;
+}
+button:hover{ opacity:0.95; }
+
+.tombol-row{ margin:10px 0; }
+
+/* GALLERY CARDS */
+.card-container{
+  display:grid;
+  gap:12px;
+  margin-top:12px;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  border:1px solid #ddd;
+  padding:6px;
+  border-radius:6px;
+  text-align:center;
+  transition: transform .25s ease;
+}
+.card img{ width:100%; height:auto; display:block; border-radius:4px; }
+
+/* FOOTER */
+.footer{ text-align:center; padding:18px; }
+
+/* ---------- MODE: RAPI (default) ---------- */
+.rapi h4{ box-shadow:none; }
+.rapi .card{ transform:none; position:static; left:auto; top:auto; }
+
+/* ---------- MODE: BERANTAKAN (GILA) ----------
+   Selain CSS ini, JS akan menambahkan inline styles acak (rotate, top/left, font-size, warna).
+   Di CSS kita set beberapa gaya dasar agar terlihat 'berantakan' juga.
+*/
+.berantakan{
+  background: var(--kontras-bad) !important;
+  color: #ff0000 !important;
+}
+
+/* beberapa perubahan visual 'berantakan' */
+.berantakan h4{
+  background: #fff200;
+  transform: rotate(-2deg);
+  box-shadow: 6px 6px 0 rgba(0,0,0,0.15);
+}
+.berantakan .card{
+  background: #ffecb3;
+  border:3px dashed #ff00aa;
+  transform: rotate(3deg);
+}
+
+/* ---- RWD: 1 / 2 / 3 kolom ---- */
+@media (max-width:600px){
+  .card-container{ grid-template-columns: 1fr; }
+}
+@media (min-width:601px) and (max-width:992px){
+  .card-container{ grid-template-columns: 1fr 1fr; }
+}
+@media (min-width:993px){
+  .card-container{ grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* tambahan: animasi berkedip & kontras untuk mode berantakan */
+@keyframes blink {
+  0%{opacity:1}
+  50%{opacity:0.2}
+  100%{opacity:1}
+}
+.berantakan *{
+  animation: blink 2s infinite;
+}

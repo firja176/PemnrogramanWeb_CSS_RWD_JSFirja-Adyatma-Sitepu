@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pencemaran Lingkungan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="body" class="tema-hijau rapi">
+  <!-- HEADER / IDENTITAS -->
+  <header class="header"> 
+    <div class="identitas">
+      <div><strong>Nama:</strong> Firja Adyatma Sitepu</div>
+      <div><strong>NIM:</strong> 202431104 </div>
+    </div>
+  </header>
+
+  <!-- KONTEN UTAMA -->
+  <main class="container">
+    <!-- PENJELASAN UMUM -->
+    <section class="umum">
+      <h2>Penjelasan Umum tentang Pencemaran Lingkungan</h2>
+      <p>
+        Pencemaran lingkungan adalah masuknya zat, energi, atau makhluk hidup ke lingkungan sehingga
+        kualitas lingkungan menurun dan dapat membahayakan kehidupan manusia, hewan, dan tumbuhan.
+        Sumber utamanya antara lain limbah industri, emisi kendaraan, pembakaran sampah, dan limbah rumah tangga.
+      </p>
+
+      <div class="tombol-row">
+        <button id="btnShowGallery" onclick="location.href='gambar.html'">Tampilkan Gambar (Galeri)</button>
+      </div>
+    </section>
+    <hr />
+
+    <!-- PETUNJUK -->
+    <section class="topik">
+      <h3 class="petunjuk"> Klik judul untuk menampilkan / menyembunyikan penjelasan </h3>
+
+      <!-- 7 JUDUL DENGAN INTERAKSI -->
+      <article>
+        <h4 onclick="togglePenjelasan('p1')">1. Pencemaran Udara</h4>
+        <p id="p1" class="penjelasan"> Pencemaran udara terjadi karena emisi yang dihasilkan oleh kendaraan bermotor maupun aktivitas industri yang terus meningkat setiap tahunnya. Kendaraan mengeluarkan gas buang berupa karbon monoksida, nitrogen oksida, dan hidrokarbon yang dapat membahayakan kesehatan manusia serta merusak lingkungan. Sementara itu, pabrik dan proses pembakaran di industri menghasilkan partikel halus (PM2.5 dan PM10) serta berbagai gas beracun yang dapat mencemari atmosfer dalam jangka panjang. Jika tidak dikendalikan, kedua sumber emisi ini dapat memperburuk kualitas udara, menyebabkan kabut asap, serta meningkatkan risiko penyakit pernapasan pada masyarakat. peningkatan jumlah kendaraan dan pertumbuhan industri yang tidak diimbangi dengan pengawasan ketat membuat pencemaran udara semakin sulit dikendalikan. </p>
+      </article>
+
+      <article>
+        <h4 onclick="togglePenjelasan('p2')">2. Pencemaran Air</h4>
+        <p id="p2" class="penjelasan"> Limbah cair industri dan pembuangan sampah ke sungai maupun laut menjadi penyebab utama pencemaran air yang semakin mengkhawatirkan. Banyak industri membuang limbah tanpa melalui proses pengolahan yang memadai, sehingga zat kimia berbahaya seperti logam berat, deterjen, dan bahan beracun lainnya langsung masuk ke perairan. Hal ini tidak hanya merusak ekosistem air, tetapi juga mengancam makhluk hidup yang bergantung pada sumber air tersebut, termasuk manusia. Air yang tercemar dapat menyebabkan gangguan kesehatan, menurunnya kualitas air bersih, serta kerusakan jangka panjang pada lingkungan. Selain itu, kebiasaan masyarakat membuang sampah ke sungai atau laut membuat proses pencemaran semakin parah dan sulit untuk dipulihkan. </p>
+      </article>
+
+      <article>
+        <h4 onclick="togglePenjelasan('p3')">3. Pencemaran Tanah</h4>
+        <p id="p3" class="penjelasan"> Pestisida, limbah padat, dan tumpahan bahan kimia menjadi faktor utama yang menurunkan kualitas tanah dan mengganggu keseimbangan ekosistem darat. Penggunaan pestisida secara berlebihan dalam kegiatan pertanian dapat membunuh organisme tanah yang sebenarnya berperan penting dalam menjaga kesuburan. Selain itu, limbah padat seperti plastik, logam, dan sisa industri yang dibuang sembarangan dapat menghambat proses penyerapan air oleh tanah serta mencemari lapisan tanah dengan zat berbahaya. Tumpahan bahan kimia dari kegiatan industri juga dapat meresap ke dalam tanah dan merusak struktur serta kandungan mineral alami di dalamnya. Akibatnya, tanah menjadi kurang subur dan tidak lagi mampu mendukung tanaman dengan baik. </p>
+      </article>
+
+      <article>
+        <h4 onclick="togglePenjelasan('p4')">4. Kebisingan</h4>
+        <p id="p4" class="penjelasan"> Kebisingan yang berasal dari kendaraan dan mesin memberikan dampak negatif yang signifikan terhadap kesehatan dan kenyamanan manusia. Suara bising dari lalu lintas yang padat, terutama di kawasan perkotaan, dapat meningkatkan tingkat stres, mengganggu konsentrasi, serta memicu gangguan tidur bagi masyarakat yang tinggal di sekitarnya. Di sisi lain, penggunaan mesin industri yang bekerja dengan intensitas tinggi juga menghasilkan tingkat kebisingan yang cukup besar, sehingga berpotensi merusak pendengaran pekerja maupun warga sekitar jika terjadi secara terus-menerus. Kondisi ini menjadikan kebisingan sebagai salah satu bentuk polusi yang sering diabaikan, padahal memiliki dampak jangka panjang yang serius. Selain itu, tingkat kebisingan yang tidak terkendali dapat menurunkan kualitas hidup dan membuat lingkungan terasa tidak nyaman untuk ditinggali. </p>
+      </article>
+
+      <article>
+        <h4 onclick="togglePenjelasan('p5')">5. Sampah Plastik</h4>
+        <p id="p5" class="penjelasan"> Plastik merupakan salah satu jenis limbah yang paling sulit terurai, sehingga keberadaannya dapat mencemari lingkungan darat maupun laut dalam jangka waktu yang sangat lama. Ketika dibuang sembarangan, plastik akan menumpuk di tanah dan menghambat proses penyerapan air serta pertumbuhan tanaman. Di perairan, sampah plastik dapat terbawa arus hingga mencapai laut dan terpecah menjadi mikroplastik yang sulit dideteksi. Keberadaan mikroplastik ini dapat masuk ke rantai makanan dan membahayakan organisme yang hidup di ekosistem tersebut. Fauna laut seperti ikan, penyu, dan burung sering kali menelan plastik karena mengiranya sebagai makanan, yang pada akhirnya menyebabkan luka internal, keracunan, bahkan kematian. Peningkatan jumlah sampah plastik yang tidak terkelola dengan baik menjadikan pencemaran semakin sulit diatasi. </p>
+      </article>
+
+      <article>
+        <h4 onclick="togglePenjelasan('p6')">6. Limbah Industri</h4>
+        <p id="p6" class="penjelasan"> Limbah industri yang tidak diolah dengan baik dapat memasukkan berbagai zat beracun ke lingkungan dan menimbulkan dampak yang luas bagi ekosistem. Banyak pabrik yang menghasilkan limbah berupa bahan kimia berbahaya seperti logam berat, senyawa organik, dan zat korosif yang dapat mencemari tanah, air, maupun udara. Ketika limbah tersebut dibuang tanpa melalui proses pengolahan yang memadai, zat-zat beracun tersebut dapat meresap ke dalam tanah, mencemari sumber air, serta mengganggu keseimbangan ekologi. Dampaknya tidak hanya dirasakan oleh tumbuhan dan hewan, tetapi juga oleh manusia yang menggunakan air atau mengonsumsi produk dari lingkungan yang telah tercemar. Selain itu, pencemaran dari limbah industri yang tidak dikendalikan dapat menyebabkan kerusakan lingkungan jangka panjang yang sulit dipulihkan. </p>
+      </article>
+
+      <article>
+        <h4 onclick="togglePenjelasan('p7')">7. Emisi Kendaraan Bermotor</h4>
+        <p id="p7" class="penjelasan"> Emisi kendaraan bermotor menghasilkan berbagai polutan berbahaya seperti karbon monoksida (CO), nitrogen oksida (NOx), dan partikel halus yang dapat mencemari udara secara signifikan. Karbon monoksida dapat mengganggu kemampuan darah dalam mengangkut oksigen, sedangkan nitrogen oksida berkontribusi terhadap pembentukan hujan asam serta iritasi pada saluran pernapasan. Partikel halus seperti PM2.5 dan PM10 juga sangat berbahaya karena ukurannya yang kecil memungkinkan mereka masuk hingga ke paru-paru dan aliran darah. Kondisi ini membuat daerah dengan lalu lintas padat sering mengalami penurunan kualitas udara yang berdampak pada kesehatan masyarakat, terutama bagi anak-anak, lansia, dan penderita penyakit pernapasan. Dan juga, meningkatnya jumlah kendaraan setiap tahun menyebabkan konsentrasi polutan di udara semakin sulit dikendalikan. </p>
+      </article>
+    </section>
+
+    <!-- MODE TAMPILAN -->
+    <section class="modes">
+      <h3>Mode Tampilan</h3>
+      <div class="tombol-row">
+        <button id="btnRapi" onclick="modeRapi()"> Mode Rapi </button>
+        <button id="btnBerantakan" onclick="modeBerantakan()">Mode Berantakan (hati hati kak/bang)</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <button onclick="goBack()">Kembali</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
